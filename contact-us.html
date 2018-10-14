@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Little London International</title>
+  <meta name="author" content="name">
+  <meta name="description" content="description here">
+  <meta name="keywords" content="keywords,here">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <div id="hide"></div>
+  <div id="social">
+    <ul>
+      <li><a><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_square_black-512.png"></a></li>
+      <li><a><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/twitter_square_black-512.png"></a></li>
+      <li><a><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/instagram_square_black-512.png"></a></li>
+      <li><a><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/google_square_black-512.png"></a></li>
+      <li><a><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/youtbue_square_black-512.png"></a></li>
+    </ul>
+  </div>
+  <div id="slideout-menu">
+   <div class="btn" id="close-time">
+    <i class="fa fa-times toggle-btn" aria-hidden="true"></i>
+  </div>
+  <ul class="menu">
+    <li>
+     <a href="index.html">Home</a>
+   </li>
+   <li>
+     <a href="company.html">Company</a>
+   </li>
+   <li>
+     <a href="programmes.html">Programmes</a>
+   </li>
+   <li>
+     <a href="little-london.html">Little London</a>
+   </li>
+   <li>
+     <a href="honder.html">Honder University</a>
+   </li>
+   <li>
+     <a href="stories.html">Stories</a>
+   </li>
+   <li>
+     <a href="announcements.html">Announcements</a>
+   </li>
+   <li>
+     <a href="contact-us.html">Contact</a>
+   </li>
+ </ul>
+</div>
+<div class="page-wrapper">
+ <header>
+  <i class="fa fa-bars toggle-btn" aria-hidden="true"></i>
+  <div class="vertical bbc">
+   <nav>
+    <ul>
+     <li class="home-a">
+      <a href="index.html" class="active">Home</a>
+    </li>
+    <li class="small-a">
+      <a href="company.html">Company</a>
+    </li>
+    <li>
+      <a href="programmes.html">Programmes</a>
+    </li>
+    <li>
+      <a href="little-london.html">Little London</a>
+    </li>
+    <li class="larger-a">
+      <a href="honder.html">Honder University</a>
+    </li>
+    <li class="stories-a">
+      <a href="stories.html">Stories</a>
+    </li>
+    <li class="larger-a">
+      <a href="announcements.html">Announcements</a>
+    </li>
+    <li class="small-a">
+      <a href="contact-us.html">Contact</a>
+    </li>
+  </ul>
+</nav>
+</div>
+</header>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script type="text/javascript">
+ var open = $(".toggle-btn");
+ var menu = $("#slideout-menu");
+ var page = $(".page-wrapper")
+ 
+ open.click(function(){
+   menu.toggleClass("open");
+   page.toggleClass("page-slide");
+ });
+ 
+</script>
+
+</body>
+</html>
