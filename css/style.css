@@ -319,6 +319,8 @@ header a {
 .no-container a {
     font-size: 12px;
     line-height: 20px;
+    color: white;
+    text-decoration: none;
 }
 
 img {width:100%;}
@@ -753,8 +755,9 @@ form footer {
   font-size: 1.5rem;
   padding: 0;
   border-top: 1px #ffffff2b solid;
-  height: 70%;
+  height: 60%;
   padding-top: 2.5%;
+  padding-bottom: 2.5%;
 }
 
 .menu li {
@@ -869,4 +872,36 @@ form footer {
     text-transform: uppercase;
     font-size: 13px;
     color: grey;
+}
+
+#contact-emails span {
+    font-family: oswald;
+    text-transform: uppercase;
+    color: #f44336;
+}
+
+#contact-emails a {
+    font-family: oswald;
+    color: white;
+}
+
+#contact-emails {
+    border-top: 1px #ffffff2b solid;
+    padding-top: 7.5%;
+}
+
+#call-us {
+    width: 200px;
+    position: fixed;
+    top: 0;
+    right: 20px;
+    background: #f44336;
+    z-index: 1000;
+    color: white;
+    font-family: oswald;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-align: center;
+    padding: 20px;
+    border-top: 3px white solid;
 }
