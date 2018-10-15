@@ -5,7 +5,7 @@ margin: 0;
 }
 }
 .container {
-    width: 90%;
+    width: 77.5%;
     margin: 0 auto;
     display: block;
     height: 100%;
@@ -269,7 +269,7 @@ float: left;
 header {
     display: block;
     position: relative;
-        width: 100%;
+    width: 100%;
     z-index: 10;
 }
 @media (min-width:768px) {
@@ -341,7 +341,7 @@ img {width:100%;}
 }
 
 
-.images-left {position: absolute;left: 0;height: 100%;width: 600px;top: 0;display: none;z-index: -1;}
+.images-left {position: relative;left: 0;height: 100%;width: 100%;top: 0;z-index: -1;}
 @media (min-width:768px) {
 .images-left {position: absolute;left: 0;height: 75%;width: 600px;top: 100px;display: block;}}
 
@@ -573,8 +573,12 @@ form footer {
 #barry-principle {
     top: 0;
     position: relative;
-    width: 300px;
-    left: 130px;
+    width: 100%;
+    left: 0;
+    margin: 0 auto;
+    display: block;
+    margin-top: 30px !important;
+    float: left;
 }
 
 .programme p {
@@ -836,8 +840,8 @@ form footer {
 }
 
 #social {
-    left: 10px;
-    width: 30px;
+    left: -2px;
+    width: 33px;
     z-index: 10;
     position: fixed;
     top: 50%;
@@ -894,7 +898,7 @@ form footer {
     width: 200px;
     position: fixed;
     top: 0;
-    right: 20px;
+    right: 0;
     background: #f44336;
     z-index: 1000;
     color: white;
@@ -903,5 +907,5 @@ form footer {
     font-size: 13px;
     text-align: center;
     padding: 20px;
-    border-top: 3px white solid;
+    border-top: 0;
 }
