@@ -239,7 +239,7 @@ display: block;
     position: absolute;
     top: 0;
     height: 100%;
-    width: 400px;
+    width: 100%;
     right: 0;
     z-index: 1;
     display: none;
@@ -727,6 +727,7 @@ form footer {
     object-fit: cover;
     display: block;
     object-position: 0 0;
+    margin: 0  auto;
 }
 @media (min-width:768px) {
 
