@@ -51,7 +51,7 @@ p {line-height: 22px;font-size: 12px;}
     top: 0;
 }
 @media (min-width:768px) {
-.right-images {position: absolute;right: 0;height: 100%;width: 400px;top: 0;display: block;}}
+.right-images {position: absolute;right: -50px;height: 100%;width: 400px;top: 0;display: block;}}
 #hero {text-align: center;height: 100vh;margin: 0;}
 @media (min-width:768px) {
 #hero {height: 100vh;text-align: left;position: relative;}}
@@ -252,8 +252,8 @@ display: block;
     top: 0;
     height: 100%;
     width: 400px;
-    right: 0;
-    z-index: 1;
+    right: 205px;
+    z-index: 10;
 }}
 
 .image-two {
@@ -270,11 +270,13 @@ display: block;
 .image-two {
     position: absolute;
     bottom: -40px;
-    height: 70%;
+    height: 100%;
+    max-height: 100vh;
     display: block;
     width: 300px;
     background: #f44336;
     right: 150px;
+    top: 0;
 }}
 
 .image-three {
@@ -386,7 +388,7 @@ img {width:100%;}
 
 .images-left {position: absolute;left: 0;height: 100%;width: 600px;top: 0;display: none;z-index: -1;}
 @media (min-width:768px) {
-.images-left {position: absolute;left: 0;height: 75%;width: 600px;top: 100px;display: block;}}
+.images-left {position: absolute;left: 0;height: 75%;width: 600px;top: 100px;display: block;max-height: 900px;}}
 
 #principle-margin {
     top: 0;
@@ -639,7 +641,7 @@ form footer {
 @media (min-width:768px) {
 
 .move-left {
-    left: -200px;
+    left: 0;
 }}
 
 #your-first-two-weeks h3 {
@@ -670,7 +672,7 @@ form footer {
 
 .move-down {
     top: 75px;
-    max-height: 90%;
+    /* max-height: 90%; */
 }
 
 .move-up {
@@ -732,7 +734,7 @@ form footer {
 #rob-image {
     width: 300px;
     height: 500px;
-    top: 200px;
+    top: 150px;
     position: relative;
     right: -50px;
     object-fit: cover;
@@ -976,6 +978,12 @@ form footer {
     margin-bottom: 330px;
 }
 
+@media (min-width:768px) {
+    #rob-section h1 {
+    margin-bottom: 0;
+}
+}
+
 #show-block {
     display: block !important;
 }
@@ -1000,6 +1008,7 @@ form footer {
     top: 30px;
     margin: 0 auto;
     float: left;
+    display: none;
 }}
 
 #faqs a {
@@ -1035,9 +1044,27 @@ form footer {
 
 #faqs h6 {
       color: #f44336;
-    left: 10px;
-    position: relative;
-    font-size: 14px;
-    line-height: 14px;
-    font-weight: bold;
+      left: 0;
+      position: relative;
+      font-size: 19px;
+      line-height: 29px;
+      font-weight: bold;
 }}
+
+
+#your-first-two-weeks {
+    width: 100%;
+}
+
+@media (min-width:768px) {
+#your-first-two-weeks {
+    width: 85%;
+}
+}
+
+.programme table {
+    margin-top: 100px;
+    display: block;
+    width: 100%;
+    float: left;
+}
