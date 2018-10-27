@@ -5,7 +5,7 @@ margin: 0;
 }
 }
 .container {
-    width: 77.5%;
+    width: 90%;
     margin: 0 auto;
     display: block;
     height: 100%;
@@ -43,7 +43,13 @@ p {
 }@media (min-width:768px) {
 p {line-height: 22px;font-size: 12px;}
 }
-.right-images {position: absolute;right: 0;height: 100%;width: 600px;top: 0;display: none;}
+.right-images {
+    position: relative;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
 @media (min-width:768px) {
 .right-images {position: absolute;right: 0;height: 100%;width: 400px;top: 0;display: block;}}
 #hero {text-align: center;height: 100vh;margin: 0;}
@@ -152,7 +158,7 @@ float: left;
 #stories a {width: 100%;display: block;float: left;text-align: -webkit-auto;}}
 h6 {float: left;width: 100%;color: grey;font-weight: 100;}
 @media (min-width:768px) {
-h6 {float: left;width: 100%;font-size: 11px;margin-bottom: 15px;}}
+h6 {float: left;width: 100%;font-size: 11px;margin-bottom: 15px; width: 90%; }}
 .right-of-section {
 width: 100%;
 float: left;
@@ -236,7 +242,20 @@ display: block;
     width: 400px;
     right: 0;
     z-index: 1;
+    display: none;
 }
+@media (min-width:768px) {
+
+.image-one {
+    position: absolute;
+    display: block;
+    top: 0;
+    height: 100%;
+    width: 400px;
+    right: 0;
+    z-index: 1;
+}}
+
 .image-two {
     position: absolute;
     bottom: -40px;
@@ -244,7 +263,30 @@ display: block;
     width: 300px;
     background: #f44336;
     right: 150px;
+    display: none;
 }
+@media (min-width:768px) {
+
+.image-two {
+    position: absolute;
+    bottom: -40px;
+    height: 70%;
+    display: block;
+    width: 300px;
+    background: #f44336;
+    right: 150px;
+}}
+
+.image-three {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    float: left;
+    left: 0;
+    display: none;
+}
+@media (min-width:768px) {
+
 .image-three {
     position: absolute;
     height: 700px;
@@ -252,8 +294,9 @@ display: block;
     background: border-box;
     bottom: 50px;
     right: 200px;
+    display: block;
     z-index: 1;
-}
+}}
 footer ul {
 width: 100%;
 display: inline-block;
@@ -269,7 +312,7 @@ float: left;
 header {
     display: block;
     position: relative;
-    width: 100%;
+        width: 100%;
     z-index: 10;
 }
 @media (min-width:768px) {
@@ -341,7 +384,7 @@ img {width:100%;}
 }
 
 
-.images-left {position: relative;left: 0;height: 100%;width: 100%;top: 0;z-index: -1;}
+.images-left {position: absolute;left: 0;height: 100%;width: 600px;top: 0;display: none;z-index: -1;}
 @media (min-width:768px) {
 .images-left {position: absolute;left: 0;height: 75%;width: 600px;top: 100px;display: block;}}
 
@@ -573,12 +616,8 @@ form footer {
 #barry-principle {
     top: 0;
     position: relative;
-    width: 100%;
-    left: 0;
-    margin: 0 auto;
-    display: block;
-    margin-top: 30px !important;
-    float: left;
+    width: 300px;
+    left: 130px;
 }
 
 .programme p {
@@ -595,8 +634,13 @@ form footer {
 }}
 
 .move-left {
-    left: -200px;
+    left: 0;
 }
+@media (min-width:768px) {
+
+.move-left {
+    left: -200px;
+}}
 
 #your-first-two-weeks h3 {
     font-family: oswald;
@@ -608,8 +652,13 @@ form footer {
 }
 
 .move-right {
-    right: -100px;
+    right: 0;
 }
+@media (min-width:768px) {
+
+.move-right {
+    right: -100px;
+}}
 
 .large-a {
     width: 15%;
@@ -666,6 +715,20 @@ form footer {
     bottom: 0;
 }
 
+
+#rob-image {
+    width: 200px;
+    height: 300px;
+    top: 125px;
+    position: relative;
+    right: 0;
+    margin: 0 auto;
+    object-fit: cover;
+    display: block;
+    object-position: 0 0;
+}
+@media (min-width:768px) {
+
 #rob-image {
     width: 300px;
     height: 500px;
@@ -674,7 +737,7 @@ form footer {
     right: -50px;
     object-fit: cover;
     object-position: 0 0;
-}
+}}
 
 .image-one img {
     object-fit: cover;
@@ -755,13 +818,13 @@ form footer {
 }
 
 .menu {
-  list-style-type: none;
-  font-size: 1.5rem;
-  padding: 0;
-  border-top: 1px #ffffff2b solid;
-  height: 60%;
-  padding-top: 2.5%;
-  padding-bottom: 2.5%;
+    list-style-type: none;
+    font-size: 1.5rem;
+    padding: 0;
+    border-top: 1px #ffffff2b solid;
+    height: 40%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
 }
 
 .menu li {
@@ -840,8 +903,8 @@ form footer {
 }
 
 #social {
-    left: -2px;
-    width: 33px;
+    left: 10px;
+    width: 30px;
     z-index: 10;
     position: fixed;
     top: 50%;
@@ -890,15 +953,14 @@ form footer {
 }
 
 #contact-emails {
-    border-top: 1px #ffffff2b solid;
-    padding-top: 7.5%;
+    padding-top: 10%;
 }
 
 #call-us {
     width: 200px;
     position: fixed;
     top: 0;
-    right: 0;
+    right: 20px;
     background: #f44336;
     z-index: 1000;
     color: white;
@@ -907,5 +969,75 @@ form footer {
     font-size: 13px;
     text-align: center;
     padding: 20px;
-    border-top: 0;
+    border-top: 3px white solid;
 }
+
+#rob-section h1 {
+    margin-bottom: 330px;
+}
+
+#show-block {
+    display: block !important;
+}
+
+
+#faqs img {
+    width: 20px;
+    padding: 0;
+    position: relative;
+    top: 30px;
+    margin: 0 auto;
+    float: left;
+    display: none;
+}
+@media (min-width:768px) {
+
+#faqs img {
+    width: 20px;
+    padding: 0;
+    display: block;
+    position: relative;
+    top: 30px;
+    margin: 0 auto;
+    float: left;
+}}
+
+#faqs a {
+    position: relative;
+    width: 100%;
+    float: left;
+}
+
+#faqs blockquote {
+    padding: 0;
+    float: left;
+    margin: 0;
+}
+
+
+
+#faqs li {
+    float: left;
+    width: 100%;
+    display: block;
+    text-align: left;
+}
+
+#faqs h6 {
+    color: #f44336;
+    left: 0;
+    position: relative;
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: bold;
+}
+@media (min-width:768px) {
+
+#faqs h6 {
+      color: #f44336;
+    left: 10px;
+    position: relative;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: bold;
+}}
