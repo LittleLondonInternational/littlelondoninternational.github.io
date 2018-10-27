@@ -253,7 +253,7 @@ display: block;
     height: 100%;
     width: 400px;
     right: 205px;
-    z-index: 10;
+    z-index: 11;
 }}
 
 .image-two {
@@ -269,14 +269,14 @@ display: block;
 
 .image-two {
     position: absolute;
-    bottom: -40px;
+    top: 140px;
     height: 100%;
     max-height: 100vh;
     display: block;
     width: 300px;
     background: #f44336;
     right: 150px;
-    top: 0;
+    z-index: 10;
 }}
 
 .image-three {
@@ -579,7 +579,7 @@ form footer {
     text-transform: uppercase;
     font-family: oswald;
     letter-spacing: 1px;
-    background: red;
+    background: #f44336;
     color: white;
     padding-bottom: 12px;
 }
@@ -671,8 +671,7 @@ form footer {
 }
 
 .move-down {
-    top: 75px;
-    /* max-height: 90%; */
+    top: 100px;
 }
 
 .move-up {
