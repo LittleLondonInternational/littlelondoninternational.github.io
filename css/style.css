@@ -431,6 +431,7 @@ footer h1 {
 
 #principle-message p {
     margin-top: 25px;
+    width: 90%;
 }
 
 .left-image {
@@ -976,8 +977,10 @@ form footer {
 }
 
 #contact-emails a {
-    font-family: oswald;
+font-family: oswald;
     color: white;
+    width: 100%;
+    float: left;
 }
 
 #contact-emails {
